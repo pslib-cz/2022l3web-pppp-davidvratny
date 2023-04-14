@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="cz">
+<html lang="cs">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="media/font/HankenGrotesk.ttf">
-    <link rel="stylesheet" href="media/css/normalize.css">
-    <link rel="stylesheet" href="media/css/styles.css">
-    <title>Logoipsum</title>
+    <link href="media/css/normalize.css" rel="stylesheet" type="text/css">
+    <link href="media/css/styles.css" rel="stylesheet" type="text/css">
+    <title>Logoipsum | Funkce</title>
 </head>
 <body>
     <nav class="navbar">
-        <p class="navbar__item navbar__item-first"><a class="navbar__item-link" href="tel:+420 777 666 666">+420 777 666 666</a></p>
-        <p class="navbar__item navbar__item-second"><a class="navbar__item-link"href="mailto:obchod@l3web.cz">obchod@l3web.cz</a></p>
+        <p class="navbar__item navbar__item-first"><a  class="navbar__item-link"href="tel=777-666-666">+420 777 666 666</a></p>
+        <p class="navbar__item navbar__item-second"><a  class="navbar__item-link"href="mailto:obchod@l3web.cz">obchod@l3web.cz</a></p>
         <p class="navbar__item navbar__item-third">Přihlášení</p>
     </nav>
     <header class="main_header">
@@ -26,9 +26,9 @@
                     document.getElementById("hamburger-menu").classList.toggle("active");
                     }
             </script>
-            <ul id="hamburger" class="mainmenu__list">
-                <li class="navbar-active"><a href="index.html">Úvod</a></li>
-                <li><a class="arrow--down" href="funkce.html">Funkce</a></li>
+            <ul id="hamburger-menu" class="mainmenu__list">
+                <li><a href="index.html">Úvod</a></li>
+                <li class="navbar-active"><a class="arrow--down" href="funkce.html">Funkce</a></li>
                 <li><a class="arrow--down" href="#">Podpora</a></li>
                 <li><a href="#">Ceník</a></li>
                 <li><a href="kontakt.html">Kontakt</a></li>
@@ -50,6 +50,7 @@
             <h2 class="funkce_header__subheading">Seznam funkcí aplikace</h2>
             <p class="funkce_header__text"><span class="bolder">Ut enim ad minima veniam,</span> quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.</p>
         </figure>
+    </header>
     <main class="funkce_obsah">
             <section class="funkce_obsah__karticka">
                 <div class="karticka_item karticka_item-visible">
@@ -105,9 +106,9 @@
                 <p class="podpora__heading">Máte dotaz <span class="orange bolder">k chování aplikace?</span></p>
                 <p class="podpora__text">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur</p>
                 <p class="podpora__email">podpora@l3web.cz</p>
-                <p class="podpora_email__cta"><a class="button">Napište nám e-mail</a></p>
+                <p class="podpora_email__cta"><a class="button" href="mailto:obchod@l3web.cz">Napište nám e-mail</a></p>
                 <p>nebo</p>
-                <p class="podpora_call__cta"><a class="button">Zavolejte nám</a></p>
+                <p class="podpora_call__cta"><a class="button" href="tel=777-666-666">Zavolejte nám</a></p>
             </section>
         </main>
         <footer>

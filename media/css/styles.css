@@ -8,54 +8,48 @@
     --page:rgba(181, 181, 181, 0.211) ;
     --lightblue-text: #8bc8e4;
     --backgroud-grey: #F5F5F5;
-    }
+}
 
 @font-face {
-        src: url(../font/HankenGrotesk.ttf);
-        font-style: normal;
-        font-family: HansenGrotesk;
-    }
+    src: url(../font/HankenGrotesk.ttf);
+    font-style: normal;
+    font-family: HansenGrotesk;
+}
 
-*   {
-        font-family: HansenGrotesk;
-        font-weight: 400;
-    }
+* {
+    font-family: HansenGrotesk;
+    font-weight: 400;
+}
 
 h1, p{
-        line-height: 1.5;
-    }
+    line-height: 1.5;
+}
 
 [class*="cta"],h1,h2 {
-        text-align: center;}
+    text-align: center;
+}
 
 .orange {
-        color: var(--primary-orange);
-        }
+    color: var(--primary-orange);
+}
 
 .bolder {
-        font-weight: 700;
-        }
-        
+    font-weight: 700;
+}
+
 figure{
-        margin: 0;
-        padding: 0;
-        }
+    margin: 0;
+    padding: 0;
+}
 
 .navbar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: var(--backgroud-grey);
-        height: 60px;
-        padding: 0 5px;
-       }
-
-.navbar__item-link {
-    color: var(--black);
-    text-decoration: none;
-    font-weight: 700;
-        }
-
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--backgroud-grey);
+    height: 60px;
+    padding: 0 5px;
+}
 
 .navbar__item {
     display: flex;
@@ -64,22 +58,34 @@ figure{
     color: var(--black);
     font-size: 0.7em;
     margin: 0 5px;
-    }
+    
+}
+
+.navbar__item-link{
+    color: var(--black);
+    text-decoration: none;
+    font-weight: 700;
+}
 
 .navbar__item-first::before {
     content: url(../images/icons/telefon.svg);
     margin-right: 7px;
-    }
+}
 
 .navbar__item-second::before {
     content: url(../images/icons/email.svg);
     margin-right: 7px;
-    }
+}
 
 .navbar__item-third::before {
     content: url(../images/icons/uzivatel.svg);
     margin-right: 7px;
-    }
+}
+
+.mainmenu__list li a:hover{
+        border-bottom: 3px solid var(--primary-orange);
+        padding-bottom: 5px;
+}
 
 .button {
     display: inline-block;
@@ -91,12 +97,12 @@ figure{
     width: 90%;
     border-radius: 30px;
     font-weight: 500;
-    }
+}
 
 .main_header {
     position: relative;
     padding: 2em 2em;
-    }
+}
 
 .mainmenu__header {
     display: flex;
@@ -105,7 +111,7 @@ figure{
     position: relative;
     padding: 0;
     margin: 0;
-    }
+}
 
 .mainmenu__list {
     display: none;
@@ -120,72 +126,74 @@ figure{
     right: -1em;
     padding: 1.5em 0;
     border-radius: 2em;    
-    }
+    z-index: 100;
+}
 
 .mainmenu__list.active {
     display: block;
-    }
+}
+
 .mainmenu__list li a {
     text-decoration: none;
     color: var(--white);
-    }
+}
+
 .caption__list {
     margin: 2em 0;
     padding: 20px;
-    }
+}
 
 .caption__list li {
     padding-left: 5px;
     padding-bottom: 3px;
-    }
+}
 
 .caption__list li::marker {
     content: url(../images/icons/mark.svg);
-    }
+}
 
 .caption h1 {
     padding: 1em 0;
-    }
+}
 
 .caption__img {
     display: none;
-    }
+}
 
 .header__caption {
-        margin: 0;
-    }
-
+    margin: 0;
+}
 .trial__cta {
-        margin-bottom: 3em;
-    }
+    margin-bottom: 3em;
+}
 
 hr{
     display: none;
-    }
+}
 
 .sponsor_logos {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    }
+}
 
 .sponsor_logos img {
     margin: 0.5em 1em;
-    }
+}
 
 .vyhody {
     position: relative;
     background-color: var(--lightblue-background);
     padding-top: 1em;
     padding: 3em;
-    }
+}
 
 .section__heading{
     color: var(--primary-blue);
     font-weight: 700;
     font-size: 2em;
     padding-bottom: 1.5em;
-    }
+}
 
 .section__heading::after{
     display: block;
@@ -194,19 +202,19 @@ hr{
     width: 100%;
     height: 3px;
     margin: 10px auto;
-    }
+}
 
 .vyhody__items {
     display: flex;
     justify-content: center;
-    }
+}
 
 .vyhody__obsah{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 3em;
-    }
+}
 
 .obsah_item{
     display: flex;
@@ -214,77 +222,77 @@ hr{
     margin: 0;
     margin-bottom: 1.5em;
     gap: 10px;
-    }
+}
 
-.obsah_item > p {
+ .obsah_item > p {
     text-align: center;
     width: 200px;
     font-size: 1em;
     margin: 0;
-    }
+}
 
-.obsah_item{
-    display: flex;
-    align-items: center;
-    margin: 0;
-    margin-bottom: 1.5em;
-    gap: 10px;
-    }
+.vyhody_card{
+    display: none;
+    background-color: var(--white);
+    box-shadow: 2px 5px #1e273f1a;
+    padding: 2em;
+    max-width: 300px;
+}
 
-.obsah_item > p {
-    text-align: center;
-    width: 200px;
-    font-size: 1em;
-    margin: 0;
-    }
+ .vyhody_card__heading{
+    color: var(--primary-blue);
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.visible{
+    display: block;
+}
 
 .pribeh{
     padding: 3em;
     padding-top: 1em;
-    }
+}
 
 .pribeh_info{
     display: flex;
     flex-direction: column;
     align-items: center;
-    }
+}
 
 .pribeh_info__heading{
     text-align: center;
     font-size: 1.3em;
     font-weight: 700;
-    }
+}
 
 .pribeh_info__text {
     overflow: hidden;
     height: 200px;
-    }
+}
 
 .pribeh_info__obsah{
     max-width: 300px;
-    }
+}
 
 .pribeh__img {
     display: none;
-    background-image: url(../images/Fotky/pat\ a\ mat.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    }
+}
 
 .pribeh__cta .button, .ONas__cta .button{
     width: 55%;
     text-align: center;
-    }
+}
 
 .ONas{
     padding: 2em;
-    }
+}
 
 .ONas_items{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    }
+}
 
 .ONas_card{
     display: flex;
@@ -292,39 +300,37 @@ hr{
     height: 150px;
     padding-top: 1em;
     max-width: 400px;
-    overflow: hidden;
-    }
+}
 
 .ONas_card__caption p{
     overflow: hidden;
     margin: 0;
     font-size: 0.5em;
-    }
+}
 
-
-.ONas_cardcaption p:first-of-type{
+.ONas_card__caption p:first-of-type{
     height: 80px;
-    }
-    
-.ONas_cardcaption p:nth-of-type(2){
+}
+
+.ONas_card__caption p:nth-of-type(2){
     padding: 1em 0;
     font-weight: 700;
     font-size: 0.8em;
-    }
+}
 
 .ONas_card img{
     width: 130px;
     padding-right:1em;
-    }
-    
+}
+
 .ONas__cta{
     margin-top: 7em;
-    }
+}
 
 .aktuality{
     background-color: var(--backgroud-grey);
     padding: 3em;
-    }
+}
 
 .aktuality__button .button{
     text-align: left;
@@ -333,13 +339,13 @@ hr{
     padding: 0;
     font-weight: 700;
     font-size: 1em;
-    }
+}
 
 .aktuality_card__heading{
     margin-top: 0;
     font-size: 1.2em;
     font-weight: 700;
-    }
+}
 
 .aktuality_card{
     display: flex;
@@ -347,31 +353,31 @@ hr{
     position: relative;
     padding-left: 1em;
     margin-top: 2em;
-    }
+}
 
 .aktuality_card:first-of-type::before {
     position: absolute;
     content: url(../images/icons/Iconka21.svg);
     right: 100%;
-    }
+}
 
 .aktuality_card:nth-of-type(2)::before {
     position: absolute;
     content: url(../images/icons/Iconka8.svg);
     right: 100%;
-    }
+}
 
 .podpora__email{
     font-weight: 700;
     font-size: 1.2em;
     margin: 1.5em 0;
     text-decoration: underline;
-    }
+}
 
 .podpora_email__cta .button{
     padding: 10px 10px;
     width: 200px;
-    }
+}
 
 .podpora_call__cta .button{
     background-color: var(--white);
@@ -379,11 +385,11 @@ hr{
     border: 4px solid var(--primary-orange);
     padding: 5px 5px;
     width: 150px;
-    }
+}
 
 .kontakt_main_header {
     padding-bottom: 0;
-    }
+}
 
 .kontakt_obsah {
     display: flex;
@@ -391,22 +397,22 @@ hr{
     padding-bottom: 3em;
     padding: 0 2em;
     gap: 4em;
-    }
+}
 
 .kontakt_texty__heading {
     font-size: 1.8em;
     font-weight: 700;
     margin-bottom: 0;
-    }
+}
 
 .kontakt_texty__heading > p > a{
     text-decoration: none;
-    }
+}
 
 .funkce_header__subheading{
     text-align: left;
     font-size: 1.2em;
-    }
+}
 
 .funkce_obsah__karticka{
     display: grid;
@@ -414,16 +420,16 @@ hr{
     background-color:var(--page);
     padding: 20px 0px 40px 0px;
     grid-template-columns:300px;
-    }
+}
 
 .mapa__fotka {
     width: 100%;
     min-width: 300px;
-    }
+}
 
 .footer_informace * {
     color: var(--lightblue-text)    
-    }
+}
 
 .footer_informace {
     display: flex;
@@ -433,15 +439,15 @@ hr{
     background-color: var(--primary-blue);
     padding: 2em 2em;
     gap: 3em;
-    }
+}
 
 .footer_informace p {
     margin: 0.7em 0;
-    }
+}
 
 .footer_informace__obsah img {
     margin-right: 10px;
-    }
+}
 
 .footer_konec {
     display: flex;
@@ -450,65 +456,65 @@ hr{
     border-top: 4px solid #456575;
     padding-top: 4em; 
     padding-bottom: 3em;
-    }
+}
 
 .footer_konec p {
     color: var(--lightblue-text);
     margin: 0;
-    }
+}
 
 .header--heading {
     text-align: left;
     font-weight: 700;
     margin-bottom: 0;
-    }
+}
 
 .stranka_info {
     display: flex;
     align-items: center;
     gap: 10px;
-    }
+}
 
 .stranka_info__icon {
     display: flex;
     align-items: center;
-    }
+}
 
 .stranka_info--house::before {
     content: url(../images/icons/baracek.svg);
     margin-right: 10px;
-    }
+}
 
 .stranka_info--dot::before {
     content: url(../images/icons/tecka.svg);
     margin-bottom: 5px;
     margin-right: 7px;
-    }
+}
 
 .funkce_obsah{ 
     padding: 0;
-    }
+}
 
 .funkce_header{
     position: relative;
-    }
+}
 
 .obsah__heading {
     font-weight: 700;
     font-size: 1.8em;
     margin-top: 0 !important;
-    }
+}
 
 .obsah__cta{
     position: absolute;
     max-width: 70px;
     right: 0;
     top: 0;
-    }
+}
 
 .obsah__cta > p{
     font-size: 0.8em;
-    }
+}
 
 .karticka_item{
     display: none;
@@ -519,53 +525,54 @@ hr{
     max-width: 300px;
     height: 200px;
     border-radius: 10px;
-    }
+}
 
 .funkce_obsah__podpora{
     text-align: center;
     margin-bottom: 2em;
-    }
-    
+}
+
 .karticka_item-visible{
     display: block;
-    }
+}
 
 .karticka_item__heading{
     color: var(--primary-orange);
     font-size: 1.2em;
     margin: 1.5em 0;
-    }
+}
 
 .karticka_item__heading, .karticka_item__text{
     text-align: left;
     padding: 0 20px;
-    }
+}
 
 .karticka_item:hover{
     box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2);
-    }
+}
 
 .karticka_item:hover .karticka_item__heading {
     color: var(--black);
-    }
+}
 
 .karticka_item:hover::before{
     content: url(../images/icons/Sipka.svg);
     position: absolute;
     bottom: -25px;
     left: 25px;
-    }
+}
 
 .podpora__heading{
     font-weight: 700;
     font-size: 1.2em;
     margin: 3em 0;
-    }
+}
 
 @media (min-width: 1360px) {
     .navbar {
         padding: 0 5em;
-        }
+    }
+
     .mainmenu__list {
         display: flex;
         align-items: center;
@@ -576,33 +583,32 @@ hr{
         height: 41px;
         right: 0;
         gap: 20px;
-        } 
+    } 
 
     .main_header, .vyhody {
         padding: 5em 11em;
         padding-top: 2em;   
-        }
+    }
 
     .mainmenu__list.active {
         display: flex;
-        }
+    }
 
     .mainmenu__list li a {
         color: var(--black);
-        }
+    }
 
     .hamburger-menu {
         display: none;
-        z-index: 100;
-        }
+    }
 
     hr.page1,hr.page2 ,hr.page3{
         display: block;
-        }
-    
+    }
+
     hr{
         display: block;
-        }
+    }
 
     hr.line01{
         position: absolute;
@@ -610,107 +616,107 @@ hr{
         left: 0;
         right: 0;
         bottom: 20%;
-        }
+    }
 
     hr.line02{
         border: 1px dotted rgba(47, 54, 128, 0.52);
         width: 40%;
         margin-bottom: 4em;
-        }
+    }
 
     hr.line03{
         position: absolute;
         border: 1px solid var(--page);
         left: 0;
         right: 0;
-        }
-    
+    }
+
     .navbar-active a {
         border-bottom: 3px solid var(--primary-orange);
         padding-bottom: 5px;
-        }
+    }
 
     .caption {
         width: 40%;
-        }
-    
+    }
+
     .caption h1 {
         text-align: left;
-        }
+    }
 
     .caption__img {
         display: block;
-        background-color: var(--primary-orange);
         width: 500px;
         height: 400px;
         border-radius: 1.5em;
-        }
-    
+        content: url(../images/Fotky/pslibškola.jpg);
+    }
+
     .trial__cta {
         text-align: left;
-        }
+    }
 
     .trial__cta .button {
         width: 40%;
-        }
+    }
 
-    .obsah__cta {
+    .obsah__cta{
         top: 70%;
-        }
-    
+    }
+
     .header__caption {
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin: 7em 0;
-        }
+    }
 
     .obsah_item {
         flex-direction: column;
         justify-content: space-between;
-        }
+    }
 
     .vyhody__obsah {
         justify-content: space-between;
         margin-top: 4em;
         margin-bottom: 3em;
-        }
+    }
 
     .vyhody_card{
         display: block;
-        }
+    }
 
     .vyhody__items {
         display: flex;
         gap: 50px;
-        }
+    }
 
     .vyhody__cta {
         margin-top: 4em;
-        }
+    }
 
     .vyhody__cta .button {
         width: 20%;
-        }
+    }
 
     .arrow--down::after {
         display: inline-block;
         content: url(../images/icons/Sipka-dolu.svg);
         padding-left: 6px;
-        }
+    }
 
     .section__heading::after {
         display: none;
-        }
+    }
 
-    .pribeh_info__heading {
+    .pribeh_info__heading{
         text-align: left;
         font-size: 1.5em;
-        }
+    }
 
-    .pribeh_info__obsah {
+    .pribeh_info__obsah{
         max-width: 450px;
-        }
+    }
 
     .pribeh_info {
         display: flex;
@@ -718,8 +724,7 @@ hr{
         justify-content: center;
         align-items: center;
         gap: 5em;
-        }
-
+    }
 
     .trial--button::before {
         display: inline-block;
@@ -728,8 +733,8 @@ hr{
         width: 3px;
         height: 15px;
         margin-right: 20px;;
-        }
-    
+    }
+
     .trial--button a {
         display: inline-block;
         text-align: center;
@@ -738,55 +743,55 @@ hr{
         padding: 0.5em 1em;
         border-radius: 1.5em;
         font-weight: 700;
-        }
+    }
 
     .pribeh__img {
         display: block;
-        background-color: var(--primary-orange);
         width: 400px;
         height: 300px;
-        } 
+        content: url(../images/Fotky/pat\ a\ mat.jpg);
+    }
 
     .pribeh__cta {
         text-align: left;
-        }
+    }
 
     .aktuality {
         padding: 3em 10em;
-        }
+    }
 
     .aktuality__items {
         display: flex;
         justify-content: center;
         gap: 10em;
-        }
+    }
 
     .aktuality__card {
         width: 40%;
-        }
+    }
 
     .ONas {
         margin-top: 3em;
-        }
+    }
 
     .ONas_card {
         padding-right: 2em;
-        }
+    }
 
     .ONas__cta .button {
         width: 20%;
-        }
+    }
 
     .footer_informace {
         justify-content: space-between;
         padding: 3em 7em;
-        }
+    }
 
-    .funkce_obsah {
+    .funkce_obsah{
         padding: 3em 9em;
-        }
+    }
 
-    .funkce_obsah__karticka {
+    .funkce_obsah__karticka{
         justify-content: center;
         align-content: center;
         grid-template-columns: repeat(auto-fill, minmax(250px, 300px));
@@ -794,42 +799,42 @@ hr{
         margin: 0 2em;
         padding: 5em 3em;
         border-radius: 15px;
-        }
-        
-    .content__cta {
-        top: 70%;
-        }
+    }
 
-    .funkce_header__subheading {
+    .content__cta{
+        top: 70%;
+    }
+
+    .funkce_header__subheading{
         font-size: 2em;
         margin-bottom: 2em;
-        }
+    }
 
     .footer_konec {
-            padding: 4em 7em;
-        }
+        padding: 4em 7em;
+    }
 
-    .karticka_item {
-            display: block;
-        }
+    .karticka_item{
+        display: block;
+    }
 
-    .header--heading {
+    .header--heading{
         font-size: 2.5em;
-        }
+    }
 
     .funkce_header__text {
         width: 70%;
-        }
-    
+    }
+
     .kontakt_obsah {
         justify-content: space-between;
         flex-direction: row;
         padding: 0 7em;
         padding-bottom: 4em;
         gap: 8em;
-        }
-
+    }
+    
     .kontakt_texty__item p {
         margin-bottom: 0;
-        }
-    }       
+    }
+}    
