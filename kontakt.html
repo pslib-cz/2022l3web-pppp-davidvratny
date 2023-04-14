@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="cz">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="media/font/HankenGrotesk.ttf">
+    <link rel="stylesheet" href="media/css/normalize.css">
+    <link rel="stylesheet" href="media/css/styles.css">
+    <title>Logoipsum</title>
+</head>
+<body>
+    <nav class="navbar">
+        <p class="navbar__item navbar__item-first "><a class="navbar__item-link" href="tel:+420 777 666 666">+420 777 666 666</a></p>
+        <p class="navbar__item navbar__item-second "><a class="navbar__item-link" href="mailto:obchod@l3web.cz">obchod@l3web.cz</a></p>
+        <p class="navbar__item navbar__item-third">Přihlášení</p>
+    </nav>
+    <header class="main_header kontakt_main_header">
+        <nav class="mainmenu__header">
+            <a href="index.html"><img src="media/images/Logo1.svg" alt="Logoipsum ikonka"></a>
+            <a class="hamburger-menu" onclick="Hamburger()" href="javascript:void(0)">
+                <img src="media/images/icons/hamburger.svg" alt="menu">
+            </a>
+            <script>
+                function Hamburger() {
+                    document.getElementById("hamburger").classList.toggle("active");
+                    }
+            </script>
+            <ul id="hamburger" class="mainmenu__list">
+                <li class="navbar-active"><a href="index.html">Úvod</a></li>
+                <li><a class="arrow--down" href="funkce.html">Funkce</a></li>
+                <li><a class="arrow--down" href="#">Podpora</a></li>
+                <li><a href="#">Ceník</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li class="trial--button"><a href="#">Zkušební verze</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="kontakt_obsah">
+        <section class="kontakt_obsah_info">
+            <figure class="kontakt_header">
+                <h1 class="header--heading">Kontakt</h1>
+                <div class="kontakt_header__obsah">
+                    <div class="stranka_info">
+                        <p class="stranka_info__icon stranka_info--house">Úvod</p>
+                        <p class="stranka_info__icon stranka_info--dot">Kontakt</p>
+                    </div>
+                </div>
+            </figure>
+            <div class="kontakt_texty">
+                <div class="kontakt_texty__item">
+                    <p class="kontakt_texty__heading">Adresa</p>
+                    <p>Pslib.cz s.r.o</p>
+                    <p>Masarykova 12345</p>
+                    <p>460 00 Liberec</p>
+                </div>
+                <div class="kontakt_texty__item">
+                    <p class="kontakt_texty__heading">Kontakty</p>
+                    <p>Telefon: +420 777 666 666</p>
+                    <p>E-mail-info: info@l3web.cz</p>
+                    <p>E-mail-obchod: obchod@l3web.cz</p>
+                </div>
+                <div class="kontakt_texty__item">
+                    <p class="kontakt_texty__heading">Sociální sítě</p>
+                    <p>Youtube: <a href="https://www.youtube.com/user/prumkaTV">@prumkaTV</a></p>
+                    <p>Linkedin: <a href="https://cz.linkedin.com/school/spsse-a-vos-liberec/">SPŠSE a VOŠ Liberec</a></p>
+                </div>
+            </div>
+        </section>
+        <section class="kontakt_obsah__mapa">
+            <a href="https://en.mapy.cz/zakladni?source=firm&id=361858&ds=1&x=15.0645435&y=50.7736094&z=17"><img src="media/images/Fotky/mapa.jpg" class="mapa__fotka" alt="Mapa polohy pobočky"></a>
+            
+        </section>
+    </main>
+    <footer>
+        <div class="footer_informace">
+            <div class="footer_informace__obsah">
+                <img src="media/images/Logo2.svg" alt="Loremipsum ">
+                <p class="bolder">Pslib.cz s.r.o.</p>
+                <p>Masarykova 12345</p>
+                <p>460 00 Liberec</p>
+                <p class="obsah__text navbar__item-first">+420 777 666 666</p>
+                <p class="obsah__text navbar__item-second">obchod@l3web.cz</p>
+                <img src="media/images/icons/youtube.svg" alt="Youtube ikonka">
+                <img src="media/images/icons/linkedin.svg" alt="Linkedin iconka">
+            </div>
+            <div class="footer_informace__obsah">
+                <p class="obsah__heading">Videotutoriály</p>
+                <p>CSS</p>
+                <p>Animace</p>
+                <p>Stříhání videa</p>
+                <p>Výběr barev</p>
+                <p>Plánování pracovníků a mezd</p>
+                <p>Všechna videa</p>
+            </div>
+            <div class="footer_informace__obsah">
+                <p class="obsah__heading">Podpora</p>
+                <p>Přihlášení k účtu</p>
+                <p>Školení</p>
+                <p>FAQ - Časté dotazy</p>
+                <p>Kontakty</p>
+                <p>Videotutoriály</p>
+            </div>
+            <div class="footer_informace__obsah">
+                <p class="obsah__heading">Menu</p>
+                <p>Úvod</p>
+                <p>Funkce</p>
+                <p>Podpora</p>
+                <p>Ceník</p>
+                <p>Kontakt</p>
+            </div>
+        </div>
+        <div class="footer_konec">
+            <p>© Copyright 2023 - Pslib.cz s.r.o. | Cookies | Podmínky užití</p>
+            <p>Vyrobilo: B interactive</p>
+        </div>
+    </footer>
+</body>
+</html>
